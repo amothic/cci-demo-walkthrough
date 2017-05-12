@@ -31,3 +31,6 @@ jobs:
           command: |
             . venv/bin/activate
             python manage.py test
+      - store_artifacts:
+          path: test-reports/
+          destination: tr1
